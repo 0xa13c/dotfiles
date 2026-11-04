@@ -1,0 +1,219 @@
+# `sheldon` configuration file
+# ----------------------------
+#
+# You can modify this file directly or you can use one of the following
+# `sheldon` commands which are provided to assist in editing the config file:
+#
+# - `sheldon add` to add a new plugin to the config file
+# - `sheldon edit` to open up the config file in the default editor
+# - `sheldon remove` to remove a plugin from the config file
+#
+# See the documentation for more https://github.com/rossmacarthur/sheldon#readme
+
+shell = "zsh"
+
+[plugins]
+
+[plugins.zsh-defer]
+github = 'romkatv/zsh-defer'
+apply = ['source']
+
+[plugins.zsh-syntax-highlighting]
+github = 'zsh-users/zsh-syntax-highlighting'
+apply = ['defer']
+
+[plugins.enhancd]
+github = 'b4b4r07/enhancd'
+apply = ['defer']
+
+[plugins.fzf-zsh]
+github = "junegunn/fzf"
+dir = "shell"
+use = [
+    "completion.zsh",
+    "key-bindings.zsh" 
+    ]
+
+[plugins.fzf-zsh-source]
+github = "junegunn/fzf"
+apply = ["fzf-source"]
+hooks.post = '''
+    export FZF_DEFAULT_OPTS="--reverse"
+    '''
+
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
+apply = ["defer"]
+
+[plugins.zsh-autopair]
+github = 'hlissner/zsh-autopair'
+apply = ['source']
+
+[plugins.zsh-autosuggestions]
+github = 'zsh-users/zsh-autosuggestions'
+apply = ['defer']
+
+[plugins.zsh-completions]
+github = 'zsh-users/zsh-completions'
+apply = ['defer']
+
+[plugins.zsh-history-on-success]
+github = 'nyoungstudios/zsh-history-on-success'
+
+[plugins.zsh-autocorrect]
+github = "zsh-users/zsh-autosuggestions"
+apply = ["fpath"]
+
+[plugins.zsh-menu-completion]
+github = "ohmyzsh/ohmyzsh"
+dir = "lib"
+use = ["completion.zsh"]
+
+
+
+[plugins.oh-my-zsh]
+github = "ohmyzsh/ohmyzsh"
+
+[plugins.oh-my-zsh-plugins]
+github = "ohmyzsh/ohmyzsh"
+use = [
+    #
+    # Load necessary functions first
+    #
+    'lib/functions.zsh',
+    "lib/{git,misc,clipboard,theme-and-appearance}.zsh",
+    #
+    # Load other useful libraries
+    #
+    'lib/completion.zsh',
+    'lib/history.zsh',
+    'lib/termsupport.zsh',
+    #
+    # Load some plugins
+    #
+    "plugins/1password/1password.plugin.zsh",
+    "plugins/archlinux/archlinux.plugin.zsh",
+    "plugins/autojump/autojump.plugin.zsh",
+    "plugins/chezmoi/chezmoi.plugin.zsh",
+    "plugins/colorize/colorize.plugin.zsh",
+    "plugins/eza/eza.plugin.zsh",
+    "plugins/hermes/hermes.plugin.zsh",
+    "plugins/mise/mise.plugin.zsh",
+    "plugins/node/node.plugin.zsh",
+    "plugins/starship/starship.plugin.zsh",
+    "plugins/tailscale/tailscale.plugin.zsh",
+    "plugins/tmux/tmux.plugin.zsh",
+    "plugins/zoxide/zoxide.plugin.zsh",
+    "plugins/gh/gh.plugin.zsh",
+    "plugins/docker/docker.plugin.zsh",
+    "plugins/docker-compose/docker-compose.plugin.zsh",
+    "plugins/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh",
+    "plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh",
+    "plugins/last-working-dir/last-working-dir.plugin.zsh",
+    "plugins/pip/pip.plugin.zsh",
+    "plugins/python/python.plugin.zsh",
+    "plugins/systemd/systemd.plugin.zsh",
+    "plugins/pwp/pwp.plugin.zsh",
+    "plugins/aliases/aliases.plugin.zsh", 
+    "plugins/extract/extract.plugin.zsh", 
+    "plugins/sudo/sudo.plugin.zsh", 
+    "plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh",
+]
+  apply = ['defer']
+
+[plugins.zoxide]
+github = "ajeetdsouza/zoxide"
+apply = ["defer"]
+
+
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+fzf-install = "{{ dir }}/install --bin > /dev/null \n path=($path {{ dir }}/bin(N-/))\n"
+fzf-source = "source <(fzf --zsh)"
+
+#[plugins.custom-commands]
+#inline = 'autoload -Uz dev cdgwq cdw uv-format'
+
+#[plugins.fzf]
+#github = 'junegunn/fzf'
+#apply = ['fzf-install']
+#hooks.post = '''
+#export FZF_DEFAULT_OPTS="--reverse"
+#'''
+
+
+#[plugins.zsh-history-shell-options]
+#inline = '''
+#setopt INC_APPEND_HISTORY_TIME
+#setopt INC_APPEND_HISTORY
+#'''
+
+#
+# Language-related plugins
+#
+
+#[#plugins.lang]
+#inline = '''
+#function _lang() {
+#    export LANG='en_US.UTF-8'
+#}
+#zsh-defer _lang
+#'''
+
+#[plugins.go]
+#inline = '''
+#function _go() {
+#    export GOPATH="${HOME}/ghq"
+#    export GOROOT=$(go env GOROOT)
+#
+#    typeset -gU path
+#    path=(
+#        $path
+#        ${GOPATH}/bin(N-/)
+#        ${HOME}/.go/bin(N-/)
+#    )
+#}
+#zsh-defer _go
+#'''
+#
+#[plugins.rust]
+#inline = '''
+#function _rust() {
+#    typeset -gU path
+#    path=(
+#        $path
+#        ${HOME}/.cargo/bin(N-/)
+#    )
+#}
+#zsh-defer _rust
+#'''
+#
+#[plugins.bun]
+#inline = '''
+#export BUN_INSTALL="$HOME/.bun"
+#
+#typeset -gU path
+#path+=(
+#    $BUN_INSTALL/bin(N-/)
+#)
+
+# bun completions
+#[ -s "$HOME/.bun/_bun" ] && zsh-defer "$HOME/.bun/_bun"
+#'''
+
+#
+# Alias
+#
+
+#[plugins.common-alias]
+#local = '~/.config/alias'
+#use = ['common.sh']
+#apply = ['source']
+
+#[plugins.common-shell]
+#local = '~/.config/shell'
+#use = ['npm-guard.sh']
+#apply = ['source']
+
+
+

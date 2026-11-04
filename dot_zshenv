@@ -1,0 +1,28 @@
+# ~/.zshenv — sourced by every zsh invocation (login, interactive, scripts).
+# Env vars only. No interactive features, no aliases.
+
+export DOTFILES=$HOME/.dotfiles
+
+export LC_ALL="en_US.UTF-8"
+export EDITOR=nvim
+export TERM="kitty"
+
+# Telemetry opt-outs across common dev tools.
+# DO_NOT_TRACK is the emerging cross-tool standard (consoledonottrack.com)
+# — respected by atuin, gatsby, supabase, prisma, and others.
+# OrbStack opt-out lives in Settings → Updates & Errors (UI only).
+export DO_NOT_TRACK=1
+
+# Fast Homebrew PATH bootstrap for non-login shells (IDE terminals, ssh-exec).
+# Login shells get the full `brew shellenv` via ~/.zprofile.
+
+# fzf (installed via Homebrew)
+
+# PATH and XDG base dirs
+source $DOTFILES/shell/path.zsh
+# source $DOTFILES/shell/xdg.zsh
+
+# mise shim PATH for non-interactive shells.
+# Interactive shells get full activation in ~/.zshrc.
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+export GITHUB_USERNAME='0xa13c'

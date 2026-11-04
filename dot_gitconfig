@@ -1,0 +1,14 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = 0xa13c
+	email = 0xa13c@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/a13c/.local/share/mise/installs/gh/2.102.0/gh_2.102.0_linux_amd64/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/a13c/.local/share/mise/installs/gh/2.102.0/gh_2.102.0_linux_amd64/bin/gh auth git-credential

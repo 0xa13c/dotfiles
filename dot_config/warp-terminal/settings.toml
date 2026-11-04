@@ -1,0 +1,182 @@
+[agents]
+cloud_conversation_storage_enabled = true
+
+[agents.warp_agent]
+is_any_ai_enabled = true
+
+[agents.warp_agent.input]
+nld_in_terminal_enabled = true
+ai_auto_detection_enabled = true
+include_agent_commands_in_history = true
+
+[agents.warp_agent.other]
+show_conversation_history = true
+show_agent_notifications = true
+thinking_display_mode = "always_show"
+orchestration_message_display_mode = "always_show"
+
+[agents.execution_profiles]
+
+[agents.execution_profiles.default]
+apply_code_diffs = "always_ask"
+ask_user_question = "always_ask"
+autosync_plans_to_warp_drive = true
+base_model = "auto-genius"
+command_allowlist = []
+command_denylist = [
+  'bash(\s.*)?',
+  'fish(\s.*)?',
+  'pwsh(\s.*)?',
+  'sh(\s.*)?',
+  'zsh(\s.*)?',
+  'curl(\s.*)?',
+  'eval(\s.*)?',
+  'exec(\s.*)?',
+  'source(\s.*)?',
+  'wget(\s.*)?',
+  'dig(\s.*)?',
+  'nslookup(\s.*)?',
+  'host(\s.*)?',
+  'ssh(\s.*)?',
+  'scp(\s.*)?',
+  'rsync(\s.*)?',
+  'telnet(\s.*)?',
+  'rm(\s.*)?',
+]
+computer_use = "never"
+directory_allowlist = []
+execute_commands = "agent_decides"
+mcp_allowlist = []
+mcp_denylist = []
+mcp_permissions = "agent_decides"
+name = "Default"
+read_files = "always_allow"
+run_agents = "always_ask"
+web_search_enabled = true
+write_to_pty = "always_allow"
+
+[agents.third_party]
+auto_open_composer_on_cli_agent_start = true
+should_render_cli_agent_toolbar = true
+
+[privacy]
+telemetry_enabled = true
+crash_reporting_enabled = true
+custom_secret_regex_list = [
+  { name = "IPv4 Address", pattern = '\b((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}\b' },
+  {
+    name = "IPv6 Address",
+    pattern = '\b((([0-9A-Fa-f]{1,4}:){1,6}:)|(([0-9A-Fa-f]{1,4}:){7}))([0-9A-Fa-f]{1,4})\b',
+  },
+  { name = "Phone Number", pattern = '\b(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}\b' },
+  {
+    name = "MAC Address",
+    pattern = '\b((([a-zA-z0-9]{2}[-:]){5}([a-zA-z0-9]{2}))|(([a-zA-z0-9]{2}:){5}([a-zA-z0-9]{2})))\b',
+  },
+  { name = "Google API Key", pattern = '\bAIza[0-9A-Za-z-_]{35}\b' },
+  {
+    name = "AWS Access ID",
+    pattern = '\b(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}\b',
+  },
+  { name = "Slack App Token", pattern = '\bxapp-[0-9]+-[A-Za-z0-9_]+-[0-9]+-[a-f0-9]+\b' },
+  { name = "GitHub Classic Personal Access Token", pattern = '\bghp_[A-Za-z0-9_]{36}\b' },
+  { name = "GitHub Fine-Grained Personal Access Token", pattern = '\bgithub_pat_[A-Za-z0-9_]{82}\b' },
+  { name = "GitHub OAuth Access Token", pattern = '\bgho_[A-Za-z0-9_]{36}\b' },
+  { name = "GitHub User-to-Server Token", pattern = '\bghu_[A-Za-z0-9_]{36}\b' },
+  { name = "GitHub Server-to-Server Token", pattern = '\bghs_[A-Za-z0-9_]{36}\b' },
+  { name = "Stripe Key", pattern = '\b(?:r|s)k_(test|live)_[0-9a-zA-Z]{24}\b' },
+  { name = "Firebase Auth Domain", pattern = '\b([a-z0-9-]){1,30}(\.firebaseapp\.com)\b' },
+  { name = "JWT", pattern = '\b(ey[a-zA-z0-9_\-=]{10,}\.){2}[a-zA-z0-9_\-=]{10,}\b' },
+  { name = "OpenAI API Key", pattern = '\bsk-[a-zA-Z0-9]{48}\b' },
+  { name = "Anthropic API Key", pattern = '\bsk-ant-api\d{0,2}-[a-zA-Z0-9\-]{80,120}\b' },
+  { name = "Generic SK API Key", pattern = '\bsk-[a-zA-Z0-9\-]{10,100}\b' },
+  { name = "Fireworks API Key", pattern = '\bfw_[a-zA-Z0-9]{24}\b' },
+  { name = "Warp API Key", pattern = '\bwk-[0-9]+\.[A-Fa-f0-9.\-]+\b' },
+]
+
+[account]
+is_settings_sync_enabled = true
+
+[code]
+
+[code.editor]
+show_code_review_button = true
+show_project_explorer = true
+auto_save = true
+show_global_search = true
+auto_open_code_review_pane_on_first_agent_change = true
+
+[code.indexing]
+agent_mode_codebase_context_auto_indexing = true
+
+[appearance]
+spacing = "normal"
+
+[appearance.text]
+ligature_rendering_enabled = true
+
+[appearance.panes]
+should_dim_inactive_panes = true
+
+[appearance.themes]
+theme = "adeberry"
+system_theme = false
+
+[appearance.tabs]
+preserve_active_tab_color = true
+
+[appearance.vertical_tabs]
+enabled = true
+view_mode = "expanded"
+
+[appearance.window]
+override_opacity = 86
+
+[notifications]
+toast_duration_secs = 8
+
+[notifications.preferences]
+is_agent_task_completed_enabled = true
+is_long_running_enabled = true
+is_needs_attention_enabled = true
+is_password_prompt_enabled = true
+long_running_threshold = 30
+mode = "enabled"
+play_notification_sound = true
+
+[general]
+default_session_mode = "agent"
+preserve_input_focus_on_block_selection = true
+
+[terminal]
+osc52_clipboard_access = "read_write"
+use_audible_bell = true
+
+[terminal.input]
+alias_expansion_enabled = true
+honor_ps1 = true
+input_box_type_setting = "classic"
+completions_open_while_typing = true
+
+[terminal.input.autosuggestions]
+show_ignore_button = true
+
+[text_editing]
+vim_mode_enabled = true
+
+[warp_drive]
+enabled = true
+
+[keys]
+ctrl_tab_behavior_setting = "activate_prev_next_tab"
+
+[global_hotkey]
+
+[global_hotkey.toggle_all_windows]
+enabled = false
+
+[global_hotkey.dedicated_window]
+enabled = false
+
+[workflows]
+show_global_workflows_in_universal_search = true

@@ -1,0 +1,28 @@
+{
+  "current_theme": "a3chron/ctp-blue@1.1",
+  "current_path": "/home/a13c/.config/stellar/a3chron/ctp-blue/1.1.toml",
+  "previous_theme": "void-div-0/stellar-cat-spacesuit@2.0",
+  "previous_path": "/home/a13c/.config/stellar/void-div-0/stellar-cat-spacesuit/2.0.toml",
+  "downloaded_themes": [
+    "presets/tokyo-night",
+    "presets/axenide",
+    "a3chron/ctp-blue",
+    "presets/catppuccin-powerline",
+    "presets/jetpack",
+    "presets/rose-pine",
+    "richbl/gort",
+    "presets/gruvbox-rainbow",
+    "presets/pure",
+    "presets/dracula",
+    "presets/nerd-font-symbols",
+    "jeremi2214/spacial-webstack",
+    "void-div-0/stellar-cat-spacesuit",
+    "a3chron/phex",
+    "renatomonroy/zash"
+  ],
+  "applied_hash": "d29f8c39b8a2d0cb1ac03cfa9d3804454a2063ebb2baaad4109ab193d25c1812",
+  "install_id": "6219ea95-2355-4b0d-a3bb-7fb58586215a",
+  "install_kind": "existing",
+  "reported_version": "1.8.0",
+  "reported_at": "2026-10-25T02:23:27Z"
+}

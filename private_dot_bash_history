@@ -1,0 +1,279 @@
+pwd
+ls -a
+cd .local/
+l
+la
+ls
+cd share/
+ls
+sudo visudo
+exec bash
+sudo pacman --sync --refresh --noconfirm fish
+chsh -s $(which fish)
+brew install sassman/tap/amoxide sassman/tap/amoxide-tui
+curl -fsSL https://github.com/sassman/amoxide-rs/releases/latest/download/amoxide-installer.sh | sh
+curl -fsSL https://github.com/sassman/amoxide-rs/releases/latest/download/amoxide-tui-installer.sh | sh
+source $HOME/.cargo/env (sh, bash, zsh)
+exec fish
+fish
+exec bash
+alias
+eff
+ff
+exec zsh
+starship
+exec zsh
+ls -a
+ls
+starship
+starship init fish
+starship config
+pacman
+pacman -h
+sudo pacman -S zsh
+sudo pacman -S zsh-autosuggestions
+sudo pacman -S zsh-completions
+sudo pacman -S zsh-history-substring-search
+..
+nvim .zshrc
+exec zsh
+ls
+echo $shell
+echo $SHELL
+bash
+tmux
+sudo pacman -S byobu
+byobu
+echo $BYOBU_PREFIX
+sudo n /usr/share/byobu/keybindings/f-keys.screen 
+aliasman sudo 'sudo '
+exec fish
+config
+byobu
+j byobu
+zsh
+stellar completion bash > ~/.local/share/bash-completion/completions/stellar~
+stellar completion bash > ~/.local/share/bash-completion/completions/stellar
+sudo pacman -S bash-completion
+stellar completion bash > ~/.local/share/bash-completion/completions/stellar
+zsh
+cd ~/.local/share/
+l
+..
+l
+cd bin
+l
+..
+cd opt
+l
+cd brew/
+l
+l Library/
+l Library/Homebrew/
+l Library/Homebrew/aliases/
+l
+l bin
+l completions/
+l completions/bash/
+l docs/
+d ~
+z ~
+l
+n .bashrc
+stellar completion bash > ~/.local/share/bash-completion/completions/stellar
+cd .config/
+l
+cd ../.local/
+l
+cd share/
+l
+cd ~/.cache/
+l
+cd yay
+l
+update-alternatives
+cd update-alternatives-git/
+l
+cd update-alternatives/
+l
+l ../pkg
+l ../pkg/update-alternatives-git/
+l ../pkg/update-alternatives-git/usr/
+l ../pkg/update-alternatives-git/usr/share/
+l ../pkg/update-alternatives-git/usr/share/applications/
+l ../pkg/update-alternatives-git/usr/bin/
+ll ../pkg/update-alternatives-git/usr/bin/
+ls -al ../pkg/update-alternatives-git/usr/bin/
+l
+n config 
+l hooks/
+n description 
+l objects/
+l objects/pack/
+l objects/info/
+l refs/
+l refs/heads/
+l refs/tags/
+cd ..
+l
+l src/
+l src/update-alternatives/
+n src/update-alternatives/README.md 
+cd src/update-alternatives/
+l
+n README.md 
+cargo build --release
+l
+n Cargo.toml 
+cd target/
+l
+cd release/
+l
+n ../../README.md 
+cp update-alternatives ~/.local/bin/update-alternatives
+cd ~/.local/bin
+l
+~
+z ~
+update-alternatives
+l /usr/local/bin
+sudo mv ~/.local/bin/update-alternatives /usr/local/bin/
+update-alternatives
+sudo update-alternatives add -n ghostty -t /usr/bin/tmux -w 100
+update-alternatives list
+update-alternatives list ghostty
+sudo update-alternatives remove ghostty
+update-alternatives remove --help
+sudo update-alternatives remove -n ghostty -t tmux
+update-alternatives list ghostty
+sudo update-alternatives remove -n ghostty -t /usr/bin/tmux
+sudo update-alternatives add -n tmux -t /usr/local/bin/ghostty 100
+sudo update-alternatives --gui
+update-alternatives list ghostty
+sudo update-alternatives add --gui
+curl -fsSL https://cli.kiro.dev/install | bash
+kiro-cli
+curl -fsSL https://download.crew.kiro.dev/cli.sh | sh
+kirocrew gateway
+update-alternatives --config vim
+update-alternatives
+cd ~/Downloads
+sudo pacman -S ./waveterm-linux-x64-0.14.5.pacman 
+sudo pacman -U ./waveterm-linux-x64-0.14.5.pacman 
+sudo pacman -S http-parser
+sudo pacman -U ./waveterm-linux-x64-0.14.5.pacman 
+waveterm
+cd ~
+. .bashrc
+Hyper-3.4.1.AppImage 
+sudo pacman -U /home/a13c/Downloads/warp-terminal-v0.2026.09.09.08.26.stable_02-1-x86_64.pkg.tar.zst
+omarchy plugin add https://github.com/ryenski/omarchy-taildrop.git --enable
+omarchy plugin add https://github.com/paudelsamir/switcher.git --enable
+omarchy plugin add https://github.com/aashbury/voxhud.git --enable
+echo $PATH
+echo $CONDA
+echo ${CONDA}
+echo $PATH
+export PATH=/home/a13c/.local/share/mise/installs/bun/latest/bin:/home/a13c/.local/share/mise/installs/codex/latest/bin:/home/a13c/.local/share/mise/installs/fzf/latest:/home/a13c/.local/share/mise/installs/gh/latest/gh_2.100.0_linux_amd64/bin:/home/a13c/.local/share/mise/installs/node/26.7.0/bin:/home/a13c/.local/share/mise/installs/python/latest/bin:/home/a13c/.local/share/mise/shims:/home/a13c/.local/opt/brew/bin:/home/a13c/.local/bin:/home/a13c/.bun/bin:/home/a13c/.cargo/bin:/home/a13c/.autojump/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/a13c/.local/share/../bin:/home/a13c/.local/opt/brew/sbin:/usr/share/omarchy/bin:/home/a13c/Apps
+echo $PATH
+n .bashrc
+echo $PATH
+zsh
+echo $PAGER
+cd ~/.dotfiles/
+n .env
+bat .env
+mv .env home.env
+mv home.env a13c.env
+l
+bat aliases.zsh 
+n aliases.zsh 
+chezmoi add a13c.env
+bat keybinds.md 
+bat tide.txt 
+bat .tmux.conf 
+cd ~
+zshrc
+nvim .zshrc
+n .zshenv 
+l
+n .zshrc.zwc 
+n .zshrc.pre-oh-my-zsh 
+cd .autojump/
+l
+l bin/
+l etc
+l etc/profile.d/
+l functions/
+l share/
+l share/autojump/
+n share/autojump/autojump.zsh
+n ~/.bashrc
+z ~
+n .profile 
+cd .config/envman/
+l
+bat alias.env 
+bat ENV.env 
+bat function.fish 
+bat function.sh 
+bat load.fish 
+bat load.sh 
+l
+bat PATH.env 
+bat alias.env
+byobu
+zsh
+l
+ls
+pwd
+#1792325526
+nvim ~/.bash_profile 
+#1792326072
+exec bash
+#1792326883
+cd .oh-my-bash/
+#1792326886
+l
+#1792333879
+sudo pacman -S aurutils
+#1792333922
+pacman -Q aurutils
+#1792336236
+yay -S aurutils
+#1792497012
+omb --help
+#1792497027
+omb
+#1792497047
+cd ~/
+#1792497049
+l
+#1792501973
+cd .oh-my-bash/
+#1792501976
+l
+#1792502003
+nvim oh-my-bash.sh 
+#1792504881
+exec zsh
+#1792566273
+n ~/.config/sheldon/plugins.toml
+#1792501799
+zsh
+#1792755268
+chsh -s $(which bash)
+#1792755305
+chsh -l
+#1792755379
+chsh -s /usr/bin/bash
+#1792770422
+mise
+#1792851476
+exec zsh
+#1792895071
+micro .bashrc
+#1792895025
+bash
+#1792895100
+nvim .bashrc

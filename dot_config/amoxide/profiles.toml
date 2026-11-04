@@ -1,0 +1,20 @@
+[[profiles]]
+name = "agentctrl"
+
+[profiles.aliases]
+pullbuild = "git pull && docker compose up -d --build"
+
+[[profiles]]
+name = "git"
+
+[profiles.aliases.gc]
+command = "git commit"
+description = "Git Commit"
+
+[profiles.aliases.gcl]
+command = "git clone"
+description = "git clone alias"
+
+[profiles.aliases.gp]
+command = "git pull"
+description = "Git Pull"

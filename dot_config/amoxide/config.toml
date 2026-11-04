@@ -1,0 +1,65 @@
+[aliases]
+cl = "clear"
+
+[aliases.".."]
+command = "cd .."
+description = "Change directory back 1 level"
+
+[aliases."..."]
+command = "cd ../.."
+description = "Change directory back 2 levels"
+
+[aliases."...."]
+command = "cd ../../.."
+description = "Change directory back 3 levels"
+
+[aliases."....."]
+command = "cd ../../../.."
+description = "Change directory back 4 levels"
+
+[aliases.cat]
+command = "bat"
+description = "cat to bat file output"
+
+[aliases.install]
+command = "sudo pacman -S"
+description = "Install with pacman"
+
+[aliases.l]
+command = "eza -aG --hyperlink auto --color always --icons always --group-directories-first"
+description = "List directory contents in a colored grid with icons and hyperlinks with directories listed first"
+
+[aliases.la]
+command = "eza -a --color always --icons always --group-directories-first"
+description = "List all in color with icons with directories first"
+
+[aliases.less]
+command = "ov"
+description = "Less to ov terminal pager"
+
+[aliases.ll]
+command = "eza -la --color always --icons always --group-directories-first"
+description = "List all in a long list in color with icons and directories first"
+
+[aliases.moar]
+command = "ov"
+description = "moar to ov terminal pager"
+
+[aliases.more]
+command = "ov"
+description = "more to ov terminal pager"
+
+[aliases.tree]
+command = "eza -a --tree --level 3 --hyperlink always --color always --icons always"
+description = "Display directories as a tree with depth of 5 levels"
+
+[aliases.tree2]
+command = "eza -a --tree --level 2 --hyperlink always --color always"
+description = "Display directories as a tree with 2 levels of depth with color and hyperlinks"
+
+[shell]
+
+[logging]
+
+[update]
+check = true

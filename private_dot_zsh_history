@@ -1,0 +1,368 @@
+: 1789072111:0;exec zsh
+: 1789072225:0;zsh
+: 1789072241:0;ohmyzsh
+: 1789072284:0;n .zshrc
+: 1789072325:0;exec zsh
+: 1789072371:0;touch ~/.oh-my-zsh/custom/aliases.zsh
+: 1789072392:0;sudo dnf -S chezmoi
+: 1789072437:0;n ~/.oh-my-zsh/custom/aliases.zsh
+: 1789072532:0;source ~/.oh-my-zsh/custom/aliases.zsh
+: 1789072539:0;sudo dnf -S chezmoi
+: 1789072561:0;dnf
+: 1789072580:0;sudo pacman -S chezmoi
+: 1789072609:0;chezmoi add .zshrc
+: 1789072655:0;chezmoi add ~/.config/fish/config.fish
+: 1789072677:0;chezmoi add ~/.bashrc
+: 1789072689:0;chezmoi add ~/.profile
+: 1789072708:0;chezmoi add ~/.bash_profile
+: 1789076711:0;n .zshrc
+: 1789089493:0;cd .oh-my-zsh/custom
+: 1789089495:0;l
+: 1789089506:0;la
+: 1789089535:0;exec zsh
+: 1789089555:0;n aliases.zsh
+: 1789089742:0;exec zsh
+: 1789089786:0;zshrc
+: 1789094484:0;cd ~
+: 1789102320:0;n .oh-my-zsh/custom/aliases.zsh
+: 1789112202:0;curl -L git.io/antigen > antigen.zsh
+: 1789112211:0;l
+: 1789114253:0;nvim ~/dotfiles/.tmux.conf
+: 1789115498:0;nvim ~/.antigenrc.zsh
+: 1789115582:0;mvdir dotfiles .dotfiles
+: 1789115600:0;mv dotfiles .dotfiles
+: 1789116841:0;n .antigenrc.zsh
+: 1789116952:0;l
+: 1789116970:0;n .antigenrc.zsh
+: 1789117003:0;mkdir .antigen
+: 1789117042:0;mv antigen.zsh .antigen/antigen.zsh
+: 1789117413:0;n .antigenrc.zsh
+: 1789118371:0;mv ~/.oh-my-zsh/custom/aliases.zsh ~/.dotfiles/aliases.zsh
+: 1789118380:0;exec zsh
+: 1789118423:0;sudo pacman -S pygmentize
+: 1789118570:0;antigen
+: 1789118582:0;antigen list
+: 1789118779:0;cd ../plugins
+: 1789118781:0;l
+: 1789118890:0;cd ~
+: 1789118922:0;n .antigenrc.zsh
+: 1789119260:0;n .zshrc
+: 1789119338:0;exec zsh
+: 1789119589:0;byobu
+: 1789122424:0;bash
+: 1789124756:0;foot
+: 1789155174:0;cd ~
+: 1789155188:0;git clone git@github.com:Doghouse-Mike/kheetsheet-hypr.git\
+cd kheetsheet-hypr\
+./install.sh
+: 1789155673:0;sudo pacman -S python-gobject
+: 1789155708:0;sudo pacman -S AT-SPI typelib
+: 1789155730:0;sudo pacman -S at-spi2-core
+: 1789155772:0;sudo pacman -S python-dbus
+: 1789155786:0;git clone git@github.com:Doghouse-Mike/kheetsheet-hypr.git\
+cd kheetsheet-hypr\
+./install.sh
+: 1789155827:0;exec zsh
+: 1789155832:0;git clone git@github.com:Doghouse-Mike/kheetsheet-hypr.git\
+cd kheetsheet-hypr\
+./install.sh
+: 1789248298:0;cd ~
+: 1789257028:0;byobu
+: 1789257160:0;alacritty
+: 1789257328:0;bash
+: 1789259937:0;j byobu
+: 1789259947:0;fish
+: 1789432232:0;update-alternatives --config vim
+: 1789432238:0;bash
+: 1789450990:0;stellar completion zsh > "${fpath[1]}/_stellar"
+: 1789451029:0;stellar
+: 1789451140:0;stellar apply presets/tokyo-night
+: 1789594643:0;l
+: 1789594648:0;lspci -k -d ::03xx
+: 1789595755:0;n /etc/mkinitcpio.conf
+: 1789595782:0;sudo -e nvim /etc/mkinitcpio.conf
+: 1789596434:0;mkinitcpio -P
+: 1789597380:0;cat /proc/cmdline
+: 1789597544:0;systemd-analyze cat-config modprobe.d
+: 1789598015:0;cat /sys/module/nvidia_drm/parameters/modeset
+: 1789598608:0;cd /sys/module
+: 1789598610:0;l
+: 1789599529:0;sudo nvim /etc/mkinitcpio.conf
+: 1789630463:0;echo $PATH
+: 1789630532:0;cd ~
+: 1789630543:0;n .zshrc
+: 1789630597:0;l
+: 1789630609:0;n .zshenv
+: 1789630651:0;n .antigenrc.zsh
+: 1789630716:0;n .antigenrc.zsh.zwc
+: 1789630777:0;cd .antigen
+: 1789630779:0;l
+: 1789630793:0;n antigen.zsh
+: 1789631579:0;echo $PATH
+: 1789631657:0;n ../zshpath.fix
+: 1789631761:0;n ~/zshpath.fix
+: 1789632457:0;optimus-manager
+: 1789632470:0;nvidia-util
+: 1789632486:0;btop
+: 1789632577:0;fish
+: 1789645896:0;..
+: 1790645150:0;source /usr/share/cursor/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-rc.zsh
+: 1790668842:0;sudo hermes gateway install --system
+: 1790668850:0;alias
+: 1790669201:0;_hermes gateway install --system
+: 1790669240:0;_ hermes gateway install --system
+: 1790669277:0;hermes gateway install
+: 1790669319:0;hermes gateway start
+: 1790669340:0;hermes gateway status
+: 1791297765:0;export PATH="/home/a13c/.local/share/mise/installs/bun/latest/bin:/home/a13c/.local/share/mise/installs/claude/latest:/home/a13c/.local/share/mise/installs/codex/latest/bin:/home/a13c/.local/share/mise/installs/copilot/latest:/home/a13c/.local/share/mise/installs/fzf/latest:/home/a13c/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin:/home/a13c/.local/share/mise/installs/github-can1357-oh-my-pi/latest:/home/a13c/.local/share/mise/installs/node/26.7.0/bin:/home/a13c/.local/share/mise/installs/npm-xai-official-grok/latest/node_modules/.bin:/home/a13c/.local/share/mise/installs/opencode/latest:/home/a13c/.local/share/mise/installs/pi/latest/pi:/home/a13c/.local/share/mise/installs/python/latest/bin:/home/a13c/.local/share/mise/shims:/home/a13c/.local/opt/brew/bin:/home/a13c/.autojump/bin:/home/a13c/.atuin/bin:/home/a13c/.local/share/../bin:/home/a13c/Apps:/home/a13c/.bun/bin:/home/a13c/.local/opt/brew/sbin:/home/a13c/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/a13c/.local/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/share/omarchy/bin"
+: 1791298359:0;pathman list
+: 1791298531:0;ls /usr/share
+: 1791298540:0;ls usr
+: 1791298549:0;ls /usr
+: 1791298570:0;ls /usr/bin
+: 1791298582:0;ls /usr/local
+: 1791298593:0;ls /usr/local/share
+: 1791298615:0;ls /usr/local/bin
+: 1791422845:0;[200~ âƒ¼ƒ´ Container odysseus-chromadb-1                       Started          2.6s
+: 1791422846:0;âƒ¶ƒ±âƒ¶ƒ²âƒ¶ƒ³ îƒ¼ƒ± ´ â€¦/odysseus ´ ïƒ°ƒ¸ dev ´ îƒ¼ƒ¸ v26.7.0 ´ ïƒ°º 12:20 ´
+: 1791422955:0;docker compose logs odysseus
+: 1791422972:0;docker compose --help
+: 1791423041:0;docker compose logs odysseus
+: 1791444840:0;antigen --help
+: 1791444849:0;antigen help
+: 1791444864:0;antigen list
+: 1791444911:0;pwp
+: 1791444926:0;antigen help
+: 1791444969:0;antigen init
+: 1791445048:0;omz --help
+: 1791445096:0;omz shop
+: 1791610690:0;flatpak install flathub eu.betterbird.Betterbird
+: 1791610976:0;flatpak run eu.betterbird.Betterbird
+: 1791636713:0;cd ~/.antigen/bundles
+: 1791636715:0;l
+: 1791636719:0;ls
+: 1791636726:0;cd zsh-users
+: 1791636730:0;ls
+: 1791637500:0;cd ~
+: 1791674841:0;tailscale status
+: 1791759902:0;yay -S github-desktop-bin~
+: 1791759915:0;yay -S github-desktop-bin
+: 1791760087:0;omarchy-refresh-applications
+: 1791760305:0;cd .local/bin
+: 1791760307:0;l
+: 1791760326:0;eza
+: 1791760371:0;n ~/.dotfiles/aliases.zsh
+: 1791760404:0;am tui
+: 1791760425:0;alias
+: 1791760524:0;aliasman
+: 1791760584:0;n ~/.config/envman/alias.env
+: 1791760630:0;l
+: 1791760638:0;eza
+: 1791760664:0;ov env.fish
+: 1791760748:0;ov env
+: 1791760857:0;n env
+: 1791760883:0;cd ghui
+: 1791760912:0;ghui
+: 1791855862:0;fish
+: 1792493987:0;diff /tmp/.zshrc.e7kzIO8829 ~/.zshrc
+: 1792495460:0;aurutils
+: 1792495485:0;aurutil
+: 1792495511:0;aur
+: 1792495958:0;aurutils
+: 1792496052:0;cd ~/.cache/yay/aurutils
+: 1792496055:0;l
+: 1792496112:0;extract aurutils-20.5.8.tar.gz
+: 1792496149:0;tar -xvf aurutils-20.5.8.tar.gz
+: 1792496157:0;l
+: 1792496166:0;cd aurutils-20.5.8
+: 1792496167:0;l
+: 1792496214:0;n .dir-locals.el
+: 1792496242:0;nvim .dir-locals.el
+: 1792496264:0;nvim README.md
+: 1792496314:0;nvim Makefile
+: 1792496464:0;cd /usr/bin
+: 1792496466:0;l
+: 1792496507:0;cd /usr/lib
+: 1792496508:0;l
+: 1792496554:0;cd aurutils
+: 1792496556:0;l
+: 1792496586:0;cd ~
+: 1792496603:0;aur
+: 1792496632:0;aur search bl.
+: 1792496719:0;aur search ble.sh
+: 1792496761:0;aur sync blesh-git
+: 1792496801:0;aur sync aur/blesh-git
+: 1792496818:0;aur
+: 1792496868:0;yay -S blesh-git
+: 1792496988:0;exec bash
+: 1792501901:0;sudo pacman -S yarn
+: 1792501917:0;exec zsh
+: 1792501944:0;bash
+: 1792504921:0;ssh ubuntu@agentctrl
+: 1792646772:0;l
+: 1792646800:0;cd plugins
+: 1792646802:0;l
+: 1792646826:0;cd starship
+: 1792646828:0;l
+: 1792646840:0;n README.md
+: 1792646846:0;nvim README.md
+: 1792646959:0;cd ~/.oh-my-zsh/plugins
+: 1792646961:0;l
+: 1792665545:0;cd starship
+: 1792665547:0;l
+: 1792665555:0;v README.md
+: 1792665642:0;j sheldon
+: 1792665664:0;z sheldon
+: 1792665667:0;l
+: 1792665690:0;v plugins.toml.tmpl
+: 1792665882:0;l ~/Downloads/pmarreck/
+: 1792665918:0;l
+: 1792665932:0;v plugins.toml
+: 1792666227:0;ssh ubuntu@agentctrl
+: 1792749156:0;/usr/bin/export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+: 1792749384:0;/bin/export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$PATH
+: 1792749511:0;PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin
+: 1792749561:0;source .zshrc
+: 1792749608:0;ls
+: 1792749661:0;nano ~/.config/sheldon/plugins.toml
+: 1792749725:0;/usr/bin/nano ~/.config/sheldon/plugins.toml
+: 1792749753:0;nvim ~/.config/sheldon/plugins.toml
+: 1792754150:0;exec zsh
+: 1792754351:0;nvim ~/.zshrc
+: 1792754828:0;exec zsh
+: 1792754884:0;fish
+: 1792755167:0;mise --help
+: 1792755224:0;bash
+: 1792783640:0;exec zsh
+: 1792783658:0;zsh
+: 1792783713:0;fd add-zsh-hook
+: 1792784163:0;nvim ~/.zshrc
+: 1792813496:0;exec zsh
+: 1792815626:0;nvim ~/.config/sheldon/plugins.toml
+: 1792816244:0;sheldon --help
+: 1792816292:0;sheldon lock
+: 1792816370:0;cd ~
+: 1792816694:0;rm ~/.zcompdump*
+: 1792816930:0;cp ~/.zshrc ~/.zshrc.preuninstallomz
+: 1792816940:0;uninstall_oh_my_zsh
+: 1792817004:0;mv .zshrc .zshrc.preomz
+: 1792817069:0;mv .zshrc.preuninstallomz .zshrc
+: 1792817080:0;nvim .zshrc
+: 1792817141:0;exec zsh
+: 1792851560:0;chsh -s $(which zsh)
+: 1792851565:0;l
+: 1792851630:0;mkdir ~/.dotfiles/zsh
+: 1792851687:0;mkdir ~/.dotfiles/zsh/antigen
+: 1792851760:0;mv .zplug ~/.dotfiles/zsh/
+: 1792851880:0;mv .antigen ~/.dotfiles/zsh/
+: 1792851924:0;mv .antigenrc.zsh ~/.dotfiles/zsh/.antigen
+: 1792851961:0;mv .antigenrc.zsh.zwc ~/.dotfiles/zsh/.antigen
+: 1792852036:0;cp .zshrc ~/.dotfiles/zsh
+: 1792852052:0;l ~/.dotfiles/zsh
+: 1792852073:0;l ~/.dotfiles/zsh/antigen
+: 1792852081:0;l ~/.dotfiles/zsh/.antigen
+: 1792852134:0;rm -r ~/.dotfiles/zsh/antigen
+: 1792852144:0;l ~/.dotfiles/zsh
+: 1792852188:0;cp .zshenv ~/.dotfiles/zsh
+: 1792852223:0;mkdir ~/.dotfiles/bash
+: 1792852299:0;cp .bashrc ~/.dotfiles/bash
+: 1792852333:0;cp .bash_profile ~/.dotfiles/bash
+: 1792852384:0;l .tmp
+: 1792864141:0;cd ~/Downloads && curl -OL https://github.com/zyedidia/eget/releases/download/v1.3.3/eget-1.3.3-linux_amd64.tar.gz\
+
+: 1792864167:0;echo $PATH
+: 1792882231:0;curl -o eget.sh https://zyedidia.github.io/eget.sh\
+shasum -a 256 eget.sh # verify with hash below\
+bash eget.sh
+: 1792882274:0;mkdir ~/.bin
+: 1792882301:0;ls
+: 1792882634:0;nvim eget.sh
+: 1792882677:0;l /usr/local/bin
+: 1792882754:0;sudo cp eget /usr/local/bin
+: 1792882769:0;eget
+: 1792882870:0;cd ~/.bin
+: 1792882874:0;l
+: 1792882896:0;eget zyedidia/micro --tag nightly
+: 1792882937:0;l
+: 1792882999:0;l
+: 1792883019:0;sudo eget jgm/pandoc --to /usr/local/bin
+: 1792883428:0;echo "[global]" >>  ~/.eget.toml\
+echo 'target = "~/.local/bin"' >> ~/.eget.toml
+: 1792883433:0;l
+: 1792883442:0;cd ~
+: 1792883446:0;l
+: 1792883487:0;l bin
+: 1792883496:0;l .bin
+: 1792884215:0;sheldon add zsh-menu-completion --github ohmyzsh/ohmyzsh --dir lib --use 'completion.zsh'
+: 1792884788:0;ov ~/.config/sheldon/plugins.toml
+: 1792885077:0;nvim ~/.config/sheldon/plugins.toml
+: 1792885298:0;sheldon add fzf-zsh --github junegunn/fzf --dir shell --use completion.zsh key-bindings.zsh\
+
+: 1792885509:0;nvim ~/.config/sheldon/plugins.toml
+: 1792887937:0;cd .bin
+: 1792889714:0;eget  sharkdp/fd
+: 1792889763:0;l ~/.local/bin
+: 1792889795:0;stellar --help
+: 1792889920:0;stellar list 
+: 1792889963:0;stellar preview --help
+: 1792890020:0;stellar completion zsh
+: 1792890208:0;stellar completion --help
+: 1792890239:0;stellar completion zsh --help
+: 1792890346:0;cd ~
+: 1792890352:0;echo "autoload -U compinit; compinit" >> ~/.zshrc
+: 1792890367:0;stellar completion zsh > "${fpath[1]}/_stellar"
+: 1792890401:0;echo $fpath
+: 1792891010:0;stellar apply presets/axenide
+: 1792891055:0;stellar apply a3chron/ctp-blue
+: 1792891119:0;stellar apply presets/catppuccin-powerline
+: 1792891148:0;stellar apply presets/jetpack
+: 1792891179:0;stellar apply presets/rose-pine
+: 1792891205:0;stellar apply richbl/gort
+: 1792891221:0;stellar apply presets/gruvbox-rainbow
+: 1792891238:0;stellar apply presets/pure
+: 1792891258:0;stellar apply presets/dracula
+: 1792891273:0;stellar apply presets/nerd-font-symbols
+: 1792891305:0;stellar apply jeremi2214/spacial-webstack
+: 1792891358:0;stellar apply void-div-0/stellar-cat-spacesuit
+: 1792891401:0;stellar apply a3chron/phex
+: 1792893668:0;chsh -s $(which zsh)
+: 1792893695:0;chsh -l
+: 1792893706:0;chsh --help
+: 1792893752:0;chsh
+: 1792893785:0;stellar list
+: 1792893862:0;stellar apply void-div-0/stellar-cat-spacesuit
+: 1792893883:0;stellar update
+: 1792891416:0;stellar apply renatomonroy/zash
+: 1792894470:0;stellar apply a3chron/ctp-blue
+: 1793169694:0;echo $GITHUB_USERNAME
+: 1793172760:0;echo "export GITHUB_USERNAME='0xa13c'" >> /home/a13c/.zshenv
+: 1793172925:0;nvim .zshenv
+: 1793173108:0; echo $GITHUB_USERNAME
+: 1793173169:0;export GITHUB_USERNAME='0xa13c'
+: 1793173181:0;echo $GITHUB_USERNAME
+: 1793204882:0;echo $GITHUB_USERNAME
+: 1793204977:0;git --help
+: 1793205156:0;git remote --help
+: 1793205433:0;echo "export GIT_DISCOVERY_ACROSS_FILESYSTEM=1" >> ~/.profile
+: 1793205454:0;export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+: 1793205698:0;l
+: 1793205721:0;git init
+: 1793205803:0;l
+: 1793205828:0;git remote add origin https://github.com/$GITHUB_USERNAME/dotfiles.git
+: 1793205907:0;l
+: 1793206032:0;l dot_dotfiles
+: 1793206046:0;l dot_config
+: 1793207049:0;git add .
+: 1793207111:0;git commit -m "Initial Commit"
+: 1793207129:0;git push
+: 1793223365:0;chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git\
+
+: 1793223379:0;l
+: 1793223434:0;chezmoi add ~/.zshrc
+: 1793223446:0;chezmoi add ~/.zshenv
+: 1793223461:0;chezmoi add ~/.profile
+: 1793223472:0;chezmoi add ~/.bashrc
+: 1793223485:0;chezmoi add ~/.bash_profile
+: 1793223498:0;l ~
+: 1793223526:0;chezmoi add ~/.XCompose
+: 1793223590:0;mv ~/path.fix ~/.dotfiles

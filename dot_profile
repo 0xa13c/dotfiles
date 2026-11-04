@@ -1,0 +1,14 @@
+
+. "$HOME/.cargo/env"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+. "$HOME/.local/share/../bin/env"
+
+. "$HOME/.atuin/bin/env"
+
+
+eval "$(/home/a13c/.local/opt/brew/bin/brew shellenv)"
+
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1

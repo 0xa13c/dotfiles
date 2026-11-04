@@ -1,0 +1,341 @@
+# -----------------------mise-config.toml-----------------------
+
+min_version = "26.9.11"
+
+# Mask these in captured task output. (Does not encrypt!) This is useful for sensitive information like passwords or API keys.
+redactions = [
+    "*_ACCESS_KEY",
+    "*_ACCESS_TOKEN",
+    "*_API_KEY",
+    "*_AUTH_HEADER",
+    "*_SECRET_KEY",
+    "*_SECRET_TOKEN",
+]
+
+[settings]
+experimental = true
+
+[settings.upgrade]
+auto_prune = false
+
+[settings.age]
+ssh_identity_files = [ "~/.ssh/mise_private_key"]
+
+# --------------------------tools-----------------------
+[tools]
+bun = "latest"
+claude = "latest"
+codex = "latest"
+copilot = "latest"
+docker-compose = "latest"
+gemini-cli = "latest"
+neovim = "latest"
+docker-cli = "latest"
+fzf = "latest"
+jq = "latest"
+gh = "latest"
+uv = "latest"
+"github:can1357/oh-my-pi" = "latest"
+node = "26.7.0"
+"npm:@kitlangton/ghui" = "latest"
+"npm:@xai-official/grok" = "latest"
+pnpm = "latest"
+opencode = "latest"
+pi = "latest"
+python = "latest"
+rust = "latest"
+go = "latest"
+direnv = "latest"
+ripgrep = "latest"
+
+[bootstrap.packages]
+"pacman:bat" = "latest"
+"pacman:fd" = "latest"
+"pacman:zoxide" = "latest"
+"pacman:zellij" = "latest"
+"pacman:age" = "latest"
+"pacman:atuin" = "latest"
+"pacman:starship" = "latest"
+"pacman:tmux" = "latest"
+"pacman:git" = "latest"
+"pacman:jq" = "latest"
+"pacman:alacritty" = "latest"
+"pacman:foot" = "latest"
+"pacman:byobu" = "latest"
+"pacman:hyperfine" = "latest"
+"pacman:jj" = "latest"
+"pacman:eza" = "latest"
+"pacman:neofetch" = "latest"
+"pacman:htop" = "latest"
+"pacman:tmuxp" = "latest"
+"pacman:code" = "latest"
+"pacman:curl" = "latest"
+"pacman:ca-certificates" = "latest"
+"pacman:gnupg" = "latest"
+"pacman:unzip" = "latest"
+"pacman:tree" = "latest"
+"yay:1password" = "latest"
+"yay:1password-cli" = "latest"
+"yay:hyper-bin" = "latest"
+"yay:ov-git" = "latest"
+
+# --------------------environment variables--------------------
+[env] 
+
+# Prepended to PATH, highest precedence first.
+_.path = [
+    "$HOME/.local/bin",
+    "$HOME/.bin",
+    "$HOME/Apps",
+    "$HOME/bin",
+    ]
+
+OP_ACCOUNT = "my.1password.com"
+OP_EMAIL = "degenknight@outlook.com"
+OP_KEY = "A3-MW3TV-A8VG7Z-HE2FB-4VNC4-RM5HN-SYKHV"
+EDITOR = "vscode"
+VISUAL = "vscode"
+
+[dotfiles]
+"~/.zshrc" = { mode = "track" }
+"~/.zshenv" = { mode = "track" }
+"~/.profile" = { mode = "track" }
+"~/.bashrc" = { mode = "track" }
+"~/.bash_profile" = { mode = "track" }
+"~/.XCompose" = { mode = "track" }
+"~/.config/Hyper/config.json" = { mode = "track" }
+"~/.config/alacritty/alacritty.toml" = { mode = "track" }
+"~/.config/amoxide/config.toml" = { mode = "track" }
+"~/.config/amoxide/profiles.toml" = { mode = "track" }
+"~/.config/atuin/config.toml" = { mode = "track" }
+"~/.config/fish/alias.fish" = { mode = "track" }
+"~/.config/fish/conf.d/atuin.env.fish" = { mode = "track" }
+"~/.config/fish/config.fish" = { mode = "track" }
+"~/.config/fish/fish_variables" = { mode = "track" }
+"~/.config/foot/foot.ini" = { mode = "track" }
+"~/.config/gh/config.yml" = { mode = "track" }
+"~/.config/gh/hosts.yml" = { mode = "track" }
+"~/.config/ghostty/config" = { mode = "track" }
+"~/.config/git/config" = { mode = "track" }
+"~/.config/hypr/autostart.lua" = { mode = "track" }
+"~/.config/hypr/bindings.lua" = { mode = "track" }
+"~/.config/hypr/hyprland.lua" = { mode = "track" }
+"~/.config/hypr/hyprsunset.conf" = { mode = "track" }
+"~/.config/hypr/input.lua" = { mode = "track" }
+"~/.config/hypr/looknfeel.lua" = { mode = "track" }
+"~/.config/hypr/monitors.lua" = { mode = "track" }
+"~/.config/hypr/xdph.conf" = { mode = "track" }
+"~/.config/mise/config.toml" = { mode = "track" }
+"~/.config/omf/bundle" = { mode = "track" }
+"~/.config/tmux/tmux.conf" = { mode = "track" }
+"~/.config/sheldon/plugins.toml" = { mode = "track" }
+"~/.config/stellar/config.json" = { mode = "track" }
+"~/.config/starship.toml" = { mode = "track" }
+"~/.config/mimeapps.list" = { mode = "track" }
+"~/.config/user-dirs.dirs" = { mode = "track" }
+"~/.config/xdg-terminals.list" = { mode = "track" }
+"~/.config/hyprland-mimeapps.list" = { mode = "track" }
+"~/.local/share/atuin/dotfiles/cache/aliases.bash" = { mode = "track" }
+"~/.local/share/atuin/dotfiles/cache/aliases.fish" = { mode = "track" }
+"~/.local/share/atuin/dotfiles/cache/aliases.zsh" = { mode = "track" }
+"~/.local/share/atuin/dotfiles/cache/vars.bash" = { mode = "track" }
+"~/.local/share/atuin/dotfiles/cache/vars.fish" = { mode = "track" }
+"~/.local/share/atuin/dotfiles/cache/vars.zsh" = { mode = "track" }
+"~/.local/share/atuin/history.db" = { mode = "track" }
+"~/.local/share/atuin/key" = { mode = "track" }
+"~/.local/share/atuin/kv.db" = { mode = "track" }
+"~/.local/share/atuin/records.db" = { mode = "track" }
+"~/.local/share/fonts/CaskaydiaCoveNerdFont-SemiLight.ttf" = { mode = "track" }
+"~/.local/share/fonts/CaskaydiaCoveNerdFont-Light.ttf" = { mode = "track" }
+"~/.local/share/fonts/FiraCodeNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/FiraCodeNerdFont-Light.ttf" = { mode = "track" }
+"~/.local/share/fonts/FiraCodeNerdFont-Retina.ttf" = { mode = "track" }
+"~/.local/share/fonts/MonaspiceRnNerdFont-ExtraLight.otf" = { mode = "track" }
+"~/.local/share/fonts/MonaspiceNeNerdFont-Light.otf" = { mode = "track" }
+"~/.local/share/fonts/MonaspiceKrNerdFont-Light.otf" = { mode = "track" }
+"~/.local/share/fonts/MonaspiceArNerdFont-Light.otf" = { mode = "track" }
+"~/.local/share/fonts/M+2NerdFont-Light.ttf" = { mode = "track" }
+"~/.local/share/fonts/M+2NerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/M+1NerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/M+1CodeNerdFontPropo-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/LiterationSerifNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/LiterationSansNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/LiterationMonoNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/LilexNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/LektonNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/IosevkaNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/IosevkaNerdFontMono-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/iMWritingQuatNerdFont-Regular.ttf" = { mode = "track" }
+"~/.local/share/fonts/HasklugNerdFont-Regular.otf" = { mode = "track" }
+"~/.local/share/fonts/HasklugNerdFont-Light.otf" = { mode = "track" }
+"~/.local/share/omf/init.fish" = { mode = "track" }
+"~/.ssh/config" = { mode = "track" }
+"~/.ssh/ssh-key-2026-07-03" = { mode = "track" }
+"~/.ssh/ssh-key-2026-07-03.pub" = { mode = "track" }
+"~/.dotfiles/aliases.zsh" = { mode = "track" }
+"~/.dotfiles/a13c.env" = { mode = "track" }
+"~/.dotfiles/amoxide.aliases" = { mode = "track" }
+"~/.dotfiles/amoxide.toml" = { mode = "track" }
+"~/.dotfiles/keybinds.md" = { mode = "track" }
+"~/.dotfiles/shell/path.zsh" = { mode = "track" }
+"~/.dotfiles/shell/xdg.zsh" = { mode = "track" }
+"~/.dotfiles/zsh/.zshenv" = { mode = "track" }
+"~/.dotfiles/zsh/.zshrc" = { mode = "track" }
+"~/.dotfiles/scripts/dependencies.sh" = { mode = "track" }
+"~/.dotfiles/scripts/sheldon.sh" = { mode = "track" }
+"~/.dotfiles/scripts/tools.sh" = { mode = "track" }
+"~/.dotfiles/misc/path.fix" = { mode = "track" }
+
+
+[bootstrap.services.mise-history]
+builtin = "history-watch"
+
+[bootstrap.mise_shell_activate]
+zprofile = "shims"
+
+[bootstrap.mise_shell_activate.zsh]
+enabled = true
+
+[bootstrap.mise_shell_activate.bash]
+enabled = true
+
+[bootstrap.mise_shell_activate.fish]
+enabled = true
+
+[bootstrap.hooks.final]
+run = '''
+ZSHRC="$HOME/.zshrc"
+if grep -qF "# >>> mise bootstrap: shell init" "$ZSHRC" 2>/dev/null; then
+    echo "shell init: already wired"
+else
+    cat >> "$ZSHRC" <<'RC'
+
+# >>> mise bootstrap: shell init >>>
+[-d $HOME/.local/opt/brew/share/zsh/site-functions ] && fpath+=("$HOME/.local/opt/brew/share/zsh/site-functions")
+[-d /usr/share/zsh/site-functions ] && fpath+=("/usr/share/zsh/site-functions")
+[-d /usr/share/zsh/vendor-completions ] && fpath+=("/usr/share/zsh/vendor-completions")
+[-d "$HOME/.docker/completions/zsh" ] && fpath+=("$HOME/.docker/completions/zsh")
+[-d "$HOME/.local/share/chezmoi" ] && fpath+=("$HOME/.local/share/chezmoi")
+
+# export ZSH="${ZSH:-$HOME}"
+
+
+command -v rbenv  >/dev/null && eval "$(rbenv init - zsh)"
+command -v direnv >/dev/null && eval "$(direnv hook zsh)"
+
+# sheldon — plugin manager (oh-my-zsh)
+command -v sheldon > /dev/null && eval "$(sheldon source)"
+
+# zoxide — smarter cd (replaces z). Provides `z` and `zi`.
+command -v zoxide > /dev/null && eval "$(zoxide init zsh)"
+
+command -v starship > /dev/null && eval "$(starship init zsh)"
+
+
+#source 
+# build array of environment config files for sourcing
+
+typeset -ga sources
+sources+="$HOME/.dotfiles/aliases.zsh"
+sources+="$HOME/.atuin/bin/env" 
+
+# include sources
+
+foreach file (`echo $sources`)
+    if [[ -a $file ]]; then
+        source $file
+    fi
+end
+
+#Config Atuin 
+command -v atuin > /dev/null && eval "$(atuin init zsh)"
+
+# HELPERS
+# ----------------------------------------------------------------
+# Avoid duplicating entry "$1" whenever add it to "$PATH"
+function add_to_PATH {
+  case ":$PATH:" in
+    *":$1:"*) :;;           # already there.
+    *) PATH="$1:$PATH";;    # prefer custom $1 first.
+  esac
+}
+
+# ----------------------------------------------------------------
+# ALIASES
+# ----------------------------------------------------------------
+alias find=fd
+alias lg=lazygit
+alias n=nvim
+# ----------------------------------------------------------------
+ ENVIRONMENTS
+# ----------------------------------------------------------------
+add_to_PATH "$HOME/.local/bin"
+add_to_PATH "$HOME/bin/"
+add_to_PATH "$HOME/Apps"
+add_to_PATH "$HOME/.bin"
+
+# PNPM.
+export PNPM_HOME="$HOME/.local/share/pnpm"
+add_to_PATH "$PNPM_HOME"
+
+# Yarn.
+add_to_PATH "$(yarn global bin)"
+
+
+# Generated for envman. Do not edit.
+# [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# Generated by Webi. Do not edit.
+
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Load after Atuin so fzf handles Ctrl+R.
+# Ctrl+T: select files; Ctrl+R: search history; Alt+C: change directory.
+if [[ -o interactive ]] && command -v fzf > /dev/null; then
+    source <(fzf --zsh)
+fi
+
+
+##### MaxUlysse/myzsh/master/.zshrc 
+
+# PATHS
+export WORKSPACE=${HOME}/workspace
+
+autoload -U compinit; compinit
+
+if [ "$TERM_PROGRAM" = "vscode" ] && command -v code >/dev/null; then . "$(code --locate-user-data)/shell-integration/zsh.sh"; fi
+# <<< mise bootstrap: shell init <<<
+RC
+    echo "shell init: wired $ZSHRC"
+fi
+if grep -qF "# >>> mise bootstrap: 1password >>>" "$ZSHRC" 2>/dev/null; then
+    echo "1password: already wired"
+else
+    cat >> "$ZSHRC" <<'RC'
+
+# >>> mise bootstrap: 1password >>>
+op-signin() {
+    if [ -n "$OP_SESSION" ] && op signin >/dev/null 2>&1; then
+    echo "1password already signed in"
+    return 0
+fi
+local session
+if ! session="$(op account add --address $OP_ACCOUNT --email $OP_EMAIL --shorthand personal --signin --raw)"; then
+    echo "1password signin failed" >&2
+    return 1
+fi
+    export OP_SESSION="$session"
+    echo "1password unlocked for this shell"
+ }
+
+op_lock() {
+    op lock >/dev/null 2>&1
+    unset OP_SESSION
+    echo "1password: locked, OP_SESSION cleared"
+}
+# <<< mise bootstrap: 1password <<<
+RC
+    echo "1password: wired $ZSHRC"
+
+'''

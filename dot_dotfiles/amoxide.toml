@@ -1,0 +1,23 @@
+[meta]
+version = 2
+
+[global.aliases]
+cl = "clear"
+sudo = "sudo "
+
+[global.aliases.l]
+command = "eza -a"
+description = "ls -a"
+
+[global.aliases.ll]
+command = "eza -la"
+description = "ls -al"
+
+[global.aliases.la]
+command = "eza -a"
+description = "ls -a"
+
+[global.aliases.install]
+command = "sudo pacman -S "
+description = "Install pkg using pacman --sync &1"
+

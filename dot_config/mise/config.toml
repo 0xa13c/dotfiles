@@ -93,8 +93,8 @@ _.path = [
 OP_ACCOUNT = "my.1password.com"
 OP_EMAIL = "degenknight@outlook.com"
 OP_KEY = "A3-MW3TV-A8VG7Z-HE2FB-4VNC4-RM5HN-SYKHV"
-EDITOR = "vscode"
-VISUAL = "vscode"
+EDITOR = "nvim"
+VISUAL = "nvim"
 
 [dotfiles]
 "~/.zshrc" = { mode = "track" }

@@ -1,0 +1,31 @@
+
+[global.aliases]
+#sudo = "sudo "
+#_ = "sudo "
+zshrc = "nvim ~/.zshrc"
+# shortcuts
+#c = clear
+df = "df -h "
+pwgen = "openssl rand -base64 24"
+du = "du -hd1|sort -h"
+pingo = "ping 8.8.8.8"
+# cd back 
+.. = "cd .."
+... = "cd ../.."
+.... = "cd ../../.."
+..... = "cd ../../../.."
+...... = "cd ../../../../.."
+# git
+lg = lazygit
+gd = lazygit
+vim = nvim
+v = nvim
+# Replace ls with eza
+ls = "eza"
+# Common combinations
+ll = "eza -l --icons --git"
+lt = "eza -T --icons --git-ignore"
+l = "eza -a"
+# Git 
+gc = "git commit "
+gs = "git status "
